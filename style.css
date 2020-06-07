@@ -6,25 +6,27 @@
 
 
 body {
+	font-family: 'Roboto',sans-serif;
 	min-height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	margin: 0px;
-	background: lightgrey;
-	font-family: 'Roboto', sans-serif;
 }
 
+.control{
+	flex: 0 0 100%;
+}
 
 /* Mobile displays */
 @media only screen and (max-width: 600px) {
 	.container {
 		flex-basis: 65%;
 		margin: 0px;
-		background: dimgrey;
 		padding: 50px;
 		color: #e2e2e2;
+		font-family: 'Roboto', sans-serif;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
 	}
 
@@ -35,13 +37,12 @@ body {
 	.container {
 		flex-basis: 25%;
 		margin: 0px;
-		background: dimgrey;
 		padding: 50px;
 		color: #e2e2e2;
+		font-family: 'Roboto', sans-serif;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
 	}
 } 
-
 
 #clock{
 	padding: 10px;
@@ -54,5 +55,23 @@ body {
 
 .footer{
 	flex: 0 0 100%;
-	color: #666;
   }
+
+ .colorBtn{
+	padding: 0.25rem 0.5rem;
+	color: #eee;
+	border: none;
+	background: rgba(0,0,0,0.5);
+	font-size: 0.85rem;
+	text-transform: capitalize;
+	cursor: pointer;
+	outline: none;
+ }
+
+  .colorBtn:hover{
+	background: rgba(0,0,0,0.6);
+ }
+
+ .colorBtn:active{
+ 	background-color: rgba(0,0,0,0.95)
+ }
