@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'digital-7regular';
+    src: url('digital7/digital-7-webfont.woff2') format('woff2'),
+         url('digital7/digital-7-webfont.woff') format('woff');
+ }
+
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 0px;
+	background: lightgrey;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/* Mobile displays */
+@media only screen and (max-width: 600px) {
+	.container {
+		flex-basis: 65%;
+		margin: 0px;
+		background: dimgrey;
+		padding: 50px;
+		color: #e2e2e2;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+	}
+
+}
+
+/* Monitors and other bigger displays */
+@media only screen and (min-width: 600px){
+	.container {
+		flex-basis: 25%;
+		margin: 0px;
+		background: dimgrey;
+		padding: 50px;
+		color: #e2e2e2;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+	}
+} 
+
+
+#clock{
+	padding: 10px;
+	font-family: 'digital-7regular', sans-serif;
+	background-color: grey;
+	font-size: 36pt;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.footer{
+	flex: 0 0 100%;
+	color: #666;
+  }
